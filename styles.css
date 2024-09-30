@@ -1,0 +1,81 @@
+/*Add your styles to this to add a grid for the gallery and a flex-box for the nav*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FAF3EF;
+    background-image: url('images/seamless-pattern-5184584_1280.png');
+    display:grid;
+    grid-template-columns: 15rem 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'header header' 'nav main' 'footer footer';
+}
+
+header{
+    background-color: #268EA6;
+    grid-area: header;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom:1rem;
+    border-bottom: #183459 solid 10px;
+}
+nav{
+    background-color:#85DEF2;
+    grid-area: nav;
+    /*add styles to the nav here to fix the links*/
+    
+}
+nav a{
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+    border:#183459 double 5px;
+    color: #183459;
+    padding:.5rem;
+}
+footer{
+    background-color: #183459;
+    grid-area: footer;
+    padding:1rem;
+    margin:auto;
+    color:#85DEF2;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+footer h1{
+    font-size:1rem;
+    width: 100%;
+}
+footer p{
+    margin:1rem;
+}
+main{
+    grid-area: main;
+}
+main h1{
+    background-color: rgba(255,255,255,.8);
+    padding:1rem 2rem;
+}
+.card{
+    background-color: #418EF2;
+    font-size: 2rem;
+    color:#FAF3EF;
+    margin:.5rem;
+}
+.card p{
+    padding:1rem;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+.card img{
+    width: 100%;
+}
+/*add some selectors for the gallery grid*/
+
+/* add a media querie for a screen less than 1080px */
